@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="description" content="SITE THE ARKAD">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="imagens/foguete.png">
+
+    <title>THE ARKAD</title>
+</head>
+
+<body>
+    <header><!--cabeçalho do site-->
+        <div>
+            <img class="imagenlogo" src="imagens/logo.png" alt="bannerprincipal">
+        </div>
+        <div class="logo">
+
+            <a href="index.html">Inicio </a>
+            <a href="quemsomos.html">Quem somos</a>
+            <a href="jogo.html">O jogo</a>
+            <a href="contato.html">Contato</a>
+        </div>
+
+
+
+    </header><!--fim do cabeçalho-->
+
+    <main><!--Inicio area do menu principal-->
+        <div class="formulario">
+            <h2>Entre em Contato</h2>
+
+            <form class="text-area" name="form-cadastro" method="post" action="">
+                <label for="">Digite seu nome: </label>
+                <input type="text" name="nomeCompleto" id="nome" size="50" maxlength="40" placeholder="Nome completo"
+                    autocomplete="off" required>
+                <br>
+                <label for="email">Digite seu email:</label>
+                <input type="email" name="email" id="email" maxlength="50" placeholder="Digite um email válido"
+                    autocomplete="off" required inputmode="email">
+                <br>
+                <label for="dataNascimento">Data Nascimento</label>
+                <input type="date" name="dataNascimento" id="dataNascimento" autocomplete="off">
+                <br>
+                <label for="estadoCivil">Seu estado Civil:</label>
+                <select name="estadoCivil">
+                    <option value="">Selecione uma opção</option>
+                    <option value="C">Casado</option>
+                    <option value="S">Solteiro</option>
+                </select>
+                <br>
+
+                <label for="genero">Selecione o sexo</label>
+                <select name="genero">
+                    <option value="">Selecione uma opção</option>
+                    <option value="M">Masculino</option>
+                    <option value="F">Feminino</option>
+                    <option value="N">Não informar</option>
+                </select>
+                <br>
+                <label class="text-area" for="mensagem">Escreva sua mensagem</label>
+                <textarea class="text-area" name="mensagem" id="mensagem" cols="120" rows="10" required
+                    placeholder="Digite sua mensagem">
+
+                </textarea>
+                <br>
+
+
+
+                <button  type="submit" class="btn-submit btn-form" >
+                    Enviar
+
+                </button>
+                <button type="reset" class="btn-reset btn-form" >
+                    Redefinir
+
+                </button>
+
+
+
+
+
+            </form>
+
+        </div>
+
+
+    </main><!--Final area do menu principal-->
+
+
+
+    <footer><!--Começo do rodapé-->
+        <p>Todos os direitos reservados<br>
+            Desenvolvido por Bruno Da Silva Salles</p>
+
+
+
+    </footer><!--Fim do rodapé-->
+</body>
+
+</html>
