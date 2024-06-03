@@ -1,271 +1,182 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    width: 100%;
-    height: 100vh;
-    font-size: 16px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background: white;
-
-
-
+  width: 100%;
+  height: 100vh;
+  font-size: 16px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background: white;
 }
 
 /*layout*/
-header {
-    background-color: black;
-    padding: 8px;
-    text-align: center;
-    box-sizing: border-box;
-
-
+.header {
+  background-color: black;
+  padding: 8px;
+  text-align: center;
+  box-sizing: border-box;
 }
-
-.imagenlogo {
-    width: 10%;
-    padding: 10px;
+.header .header-imagenlogo {
+  width: 10%;
+  padding: 10px;
 }
-
-a,
-a:visited,
-a:link {
-    padding: 8px 12px;
-    color: white;
-    text-decoration: none;
+.header .header-logo a, .header .header-logo a:visited, .header .header-logo a:link {
+  padding: 8px;
+  color: white;
+  text-decoration: none;
 }
-
-a:hover {
-    color: rgb(173, 25, 149);
-    background: #fff;
+.header .header-logo a:hover {
+  color: #ad1995;
+  background: white;
 }
 
 /* AREA PRINCIPAL */
-main {
-    width: 1000PX;
-
-    width: 100%;
-    margin: 0 auto;
-    padding: 10px;
-
+.principal {
+  width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+}
+.principal .principal-section {
+  width: 69%;
+  box-shadow: 0px 0px 10px #333;
+  float: left;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.principal .principal-section-imgbanner {
+  width: 100%;
+}
+.principal .principal-aside {
+  width: 30%;
+  box-shadow: 0px 0px 10px #333;
+  float: right;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.principal .principal-aside-imglateral {
+  width: 94%;
 }
 
-.imgbanner {
-    width: 100%;
-}
-
-.imglateral {
-    width: 94%;
-
-
-
-
-}
-
-section {
-    width: 69%;
-    box-shadow: 0px 0px 10px #333;
-
-
-    float: left;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-
-
-aside {
-    width: 30%;
-    box-shadow: 0px 0px 10px #333;
-    float: right;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-
-
-/*FIM DA AREA PRINCIPAL*/
-
+/* FIM AREA PRINCIPAL*/
 /*INICIO DAS COLUNAS GRID DA PAGINA O JOGO*/
-
-iframe{
-   display: block;
-   margin: auto;
-   
+iframe {
+  display: block;
+  margin: auto;
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: repeat(4,  25%);
-    
-    width: 100%;
-    margin: 0 auto;
-    padding: 10px;
-
-
-
-
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
 }
-
-
-
-
-.grid .coluna {
-    text-align: center;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 10px;
-    box-shadow: 0px 0px 10px #bc01d1;
-
-
+.grid-coluna {
+  text-align: center;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0px 0px  10px #bc01d1;
 }
 
 /* FIM DO DISPLAY GRID DA PAGINA O JOGO*/
-
-
 /*INICIO DO RODAPE*/
-footer {
-    background: black;
-    clear: both;
-    text-align: center;
-    padding: 8px;
-    color: white;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    box-sizing: border-box;
-
-
-
-
-
-
+.footer {
+  background: black;
+  clear: both;
+  text-align: center;
+  padding: 8px;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* FIM DO RODAPE*/
-
 /*PAGINA QUEM SOMOS*/
 h2 {
-    text-align: center;
-    margin: 5px;
-
-
-
+  text-align: center;
+  margin: 5px;
 }
 
 p {
-    text-align: center;
-
+  text-align: center;
 }
-
 
 .imgescudo {
-    display: block;
-    margin: auto;
-    padding: 50px;
+  display: block;
+  margin: auto;
+  padding: 50px;
 }
 
-/*FIM DA PAGINA QUEM SOMOS*/
-
+/*FIM DA PAGINA QUEM SOMOS */
 /*PAGINA ENTRE EM CONTATO*/
-
-main .formulario {
-    text-align: center;
-
-
-
-
+.Contato .Contato-formulario {
+  text-align: center;
 }
-
-label {
-    font-weight: bold;
-    margin: 5px 0;
-
-
+.Contato label {
+  font-weight: bold;
+  margin: 5px 0px;
 }
-
-input,
-select {
-    width: 40%;
-    padding: 10px;
-    box-sizing: border-box;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    margin: 5px 0;
-
-
-
-
+.Contato .input-select {
+  padding: 1px;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid white;
+  margin: 5px 0;
 }
-
-.btn-submit,
-.btn-reset {
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    color: rgb(173, 25, 149);
+.Contato .text-area {
+  display: block;
+  margin: auto;
 }
-
-.btn-submit {
-    background: black;
+.Contato .botao {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #ad1995;
+  background: black;
 }
-
-.btn-reset {
-    background: black;
+.Contato .btn-form:hover {
+  color: #ad1995;
+  background: white;
 }
-
-.text-area{
-    
-    display: block;
-    margin: auto;
-}
-
-
-
-
-
-.btn-form:hover {
-    color: rgb(173, 25, 149);
-    background: #fff;}
-
-
-
-
 
 /*FIM DA PAGINA ENTRE EM CONTATO*/
-
+/*MEDIA*/
 @media (max-width: 800px) {
-    header {
-        text-align: center;
-        width: 100%;
-    }
+  header {
+    text-align: center;
+    width: 100%;
+  }
 
-    section,
-    aside {
-        width: 100%;
-    }
+  section {
+    width: 100%;
+  }
 
-    .mobile{
-        display: block;
-        margin: auto;
-        width: 70%;
-        padding: 5px;
+  aside {
+    width: 100%;
+  }
 
-    }
+  .mobile {
+    display: block;
+    margin: auto;
+    width: 70%;
+    padding: 5px;
+  }
+  .mobile .mobile-coluna {
+    padding: 5px;
+  }
 
-    .mobile-coluna{
-        padding: 5px;
-    
-    }
-    iframe{
-        width: 70%;
-        height: 300px;
-    }
-
-
+  iframe {
+    width: 70%;
+    height: 300px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

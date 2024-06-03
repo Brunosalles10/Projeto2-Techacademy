@@ -12,11 +12,11 @@
 </head>
 
 <body>
-    <header><!--cabeçalho do site-->
+    <header class="header"><!--cabeçalho do site-->
         <div>
-            <img class="imagenlogo" src="imagens/logo.png" alt="bannerprincipal">
+            <img class="header-imagenlogo" src="imagens/logo.png" alt="bannerprincipal">
         </div>
-        <div class="logo">
+        <div class="header-logo">
 
             <a href="index.html">Inicio </a>
             <a href="quemsomos.html">Quem somos</a>
@@ -28,21 +28,22 @@
 
     </header><!--fim do cabeçalho-->
 
-    <main><!--Inicio area do menu principal-->
-        <div class="formulario">
+    <!--Inicio area do menu principal-->
+    <main class="Contato">
+        <div class="Contato-formulario">
             <h2>Entre em Contato</h2>
 
             <form class="text-area" name="form-cadastro" method="post" action="">
                 <label for="">Digite seu nome: </label>
-                <input type="text" name="nomeCompleto" id="nome" size="50" maxlength="40" placeholder="Nome completo"
+                <input class="input-select" type="text" name="nomeCompleto" id="nome" size="30" maxlength="40" placeholder="Nome completo"
                     autocomplete="off" required>
                 <br>
                 <label for="email">Digite seu email:</label>
-                <input type="email" name="email" id="email" maxlength="50" placeholder="Digite um email válido"
+                <input class="input-select" type="email" name="email" id="email" size="30" maxlength="50" placeholder="Digite um email válido"
                     autocomplete="off" required inputmode="email">
                 <br>
                 <label for="dataNascimento">Data Nascimento</label>
-                <input type="date" name="dataNascimento" id="dataNascimento" autocomplete="off">
+                <input class="input-select" type="date" name="dataNascimento" id="dataNascimento" autocomplete="off">
                 <br>
                 <label for="estadoCivil">Seu estado Civil:</label>
                 <select name="estadoCivil">
@@ -69,11 +70,11 @@
 
 
 
-                <button  type="submit" class="btn-submit btn-form" >
+                <button  type="submit" class="botao btn-form" >
                     Enviar
 
                 </button>
-                <button type="reset" class="btn-reset btn-form" >
+                <button type="reset" class="botao btn-form" >
                     Redefinir
 
                 </button>
@@ -86,12 +87,12 @@
 
         </div>
 
+</main>
+    <!--Final area do menu principal-->
 
-    </main><!--Final area do menu principal-->
 
 
-
-    <footer><!--Começo do rodapé-->
+    <footer class="footer"><!--Começo do rodapé-->
         <p>Todos os direitos reservados<br>
             Desenvolvido por Bruno Da Silva Salles</p>
 
