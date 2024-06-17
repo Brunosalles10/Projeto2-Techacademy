@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="description" content="SITE THE ARKAD">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="shortcut icon" href="imagens/foguete.png">
 
@@ -12,21 +14,50 @@
 </head>
 
 <body>
-    <header class="header"><!--cabeçalho do site-->
-        <div>
-            <img class="header-imagenlogo" src="imagens/logo.png" alt="bannerprincipal">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="imagens/logo.png" alt="logo site">
+
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="index.html">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="quemsomos.html">QUEM SOMOS</a>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  JOGOS
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="jogo.html">THE ARKAD</a></li>
+                  <li><a class="dropdown-item" href="#">JOGO 2</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">jogo 3</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+            <div class="d-flex">
+               
+
+                <a href="contato.html" title="contato" class="btn btn-info">
+                    <i class="fas fa-envelope"></i>
+                    Entre em contato
+
+                </a>
+
+            </div>
+          </div>
         </div>
-        <div class="header-logo">
-
-            <a href="index.html">Inicio </a>
-            <a href="quemsomos.html">Quem somos</a>
-            <a href="jogo.html">O jogo</a>
-            <a href="contato.html">Contato</a>
-        </div>
-
-
-
-    </header><!--fim do cabeçalho-->
+      </nav>
 
     <main><!--Inicio area do menu principal-->
 
@@ -40,7 +71,14 @@
                 Sou desenvolvedor deste site e jogo.
             </p>
         </div>
+
+
+
+
+
         <img class="imgescudo" src="imagens/SCCP_escudo-150px.png" alt="">
+
+
 
 
 
@@ -62,5 +100,8 @@
 
     </footer><!--Fim do rodapé-->
 </body>
+<script src="js/bootstrap.bundle.min.js">
+
+</script>
 
 </html>

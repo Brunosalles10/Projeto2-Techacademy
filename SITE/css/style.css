@@ -11,6 +11,47 @@ body {
   background: white;
 }
 
+/* nav bar INICIO*/
+.navbar {
+  background: black;
+}
+.navbar .navbar-brand img {
+  height: 150px;
+}
+.navbar .nav-link {
+  font: 22px;
+  color: white;
+  text-transform: uppercase;
+}
+.navbar .nav-link:hover {
+  color: #ad1995;
+}
+.navbar .navbar-nav .nav-link.show {
+  color: #ad1995;
+}
+.navbar .dropdown-menu {
+  background: black;
+  border-radius: 0;
+  border-top: 5px solid #ad1995;
+}
+.navbar .dropdown-menu .dropdown-item {
+  font: 20px;
+  text-transform: uppercase;
+  color: #ad1995;
+}
+
+.btn {
+  font: 20px;
+  border-radius: 0;
+}
+
+.btn {
+  background: #ad1995;
+  color: white;
+  margin-left: 15px;
+}
+
+/*FIM NAV BAR*/
 /*layout*/
 .header {
   background-color: black;
@@ -22,7 +63,9 @@ body {
   width: 10%;
   padding: 10px;
 }
-.header .header-logo a, .header .header-logo a:visited, .header .header-logo a:link {
+.header .header-logo a,
+.header .header-logo a:visited,
+.header .header-logo a:link {
   padding: 8px;
   color: white;
   text-decoration: none;
@@ -80,7 +123,7 @@ iframe {
   border-radius: 10px;
   margin: 10px;
   padding: 10px;
-  box-shadow: 0px 0px  10px #bc01d1;
+  box-shadow: 0px 0px 10px #bc01d1;
 }
 
 /* FIM DO DISPLAY GRID DA PAGINA O JOGO*/
@@ -171,6 +214,18 @@ p {
   }
   .mobile .mobile-coluna {
     padding: 5px;
+  }
+
+  .mobile-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .mobile-imagem {
+    width: 100%;
   }
 
   iframe {
