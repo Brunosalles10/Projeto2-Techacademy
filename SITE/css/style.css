@@ -53,28 +53,6 @@ body {
 
 /*FIM NAV BAR*/
 /*layout*/
-.header {
-  background-color: black;
-  padding: 8px;
-  text-align: center;
-  box-sizing: border-box;
-}
-.header .header-imagenlogo {
-  width: 10%;
-  padding: 10px;
-}
-.header .header-logo a,
-.header .header-logo a:visited,
-.header .header-logo a:link {
-  padding: 8px;
-  color: white;
-  text-decoration: none;
-}
-.header .header-logo a:hover {
-  color: #ad1995;
-  background: white;
-}
-
 /* AREA PRINCIPAL */
 .principal {
   width: 1000px;
@@ -145,16 +123,19 @@ iframe {
 h2 {
   text-align: center;
   margin: 5px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 p {
   text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .imgescudo {
   display: block;
   margin: auto;
   padding: 50px;
+  width: 400px;
 }
 
 /*FIM DA PAGINA QUEM SOMOS */
