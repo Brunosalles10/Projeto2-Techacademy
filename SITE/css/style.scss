@@ -19,11 +19,12 @@ body {
 /* nav bar INICIO*/
 .navbar {
     background: $secudary;
+
     .navbar-brand img {
         height: 150px;
     }
 
-    .nav-link{
+    .nav-link {
         font: 22px;
         color: $primary;
         text-transform: uppercase;
@@ -42,6 +43,7 @@ body {
         background: $secudary ;
         border-radius: 0;
         border-top: 5px solid $terceary;
+
         .dropdown-item {
             font: 20px;
             text-transform: uppercase;
@@ -56,6 +58,7 @@ body {
     font: 20px;
     border-radius: 0;
 }
+
 .btn {
     background: $terceary;
     color: $primary;
@@ -66,40 +69,27 @@ body {
 /*FIM NAV BAR*/
 
 
-/*layout*/
+
 
 /* AREA PRINCIPAL */
 
 .principal {
     width: 1000px;
-    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
     padding: 10px;
-
-    & &-section {
-        width: 69%;
-        box-shadow: 0px 0px 10px #333;
-        float: left;
+    
+    & &-b {
+        box-shadow: 0px 0px 10px $terceary;
         padding: 10px;
         box-sizing: border-box;
-
-        &-imgbanner {
-            width: 100%;
-        }
-    }
-
-    & &-aside {
-        width: 30%;
-        box-shadow: 0px 0px 10px #333;
-        float: right;
-        padding: 10px;
-        box-sizing: border-box;
-
-        &-imglateral {
-            width: 94%;
-        }
     }
 }
+
+
+
+
+
 
 /* FIM AREA PRINCIPAL*/
 
@@ -151,9 +141,12 @@ iframe {
 
 h2 {
     text-align: center;
-    margin: 5px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: $terceary;
+    margin-top: 25px;
     
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 
 p {
@@ -199,7 +192,7 @@ p {
     & .botao {
         border: none;
         padding: 10px 20px;
-        border-radius: 5px;
+        border-radius: 25px;
         color: rgb(173, 25, 149);
         background: black;
 
@@ -222,14 +215,6 @@ p {
         text-align: center;
         width: 100%;
 
-    }
-
-    section {
-        width: 100%;
-    }
-
-    aside {
-        width: 100%;
     }
 
     .mobile {

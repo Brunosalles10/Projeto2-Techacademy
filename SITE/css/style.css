@@ -52,33 +52,17 @@ body {
 }
 
 /*FIM NAV BAR*/
-/*layout*/
 /* AREA PRINCIPAL */
 .principal {
   width: 1000px;
-  width: 100%;
+  max-width: 100%;
   margin: 0 auto;
   padding: 10px;
 }
-.principal .principal-section {
-  width: 69%;
-  box-shadow: 0px 0px 10px #333;
-  float: left;
+.principal .principal-b {
+  box-shadow: 0px 0px 10px #ad1995;
   padding: 10px;
   box-sizing: border-box;
-}
-.principal .principal-section-imgbanner {
-  width: 100%;
-}
-.principal .principal-aside {
-  width: 30%;
-  box-shadow: 0px 0px 10px #333;
-  float: right;
-  padding: 10px;
-  box-sizing: border-box;
-}
-.principal .principal-aside-imglateral {
-  width: 94%;
 }
 
 /* FIM AREA PRINCIPAL*/
@@ -122,7 +106,8 @@ iframe {
 /*PAGINA QUEM SOMOS*/
 h2 {
   text-align: center;
-  margin: 5px;
+  color: #ad1995;
+  margin-top: 25px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -162,7 +147,7 @@ p {
 .Contato .botao {
   border: none;
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 25px;
   color: #ad1995;
   background: black;
 }
@@ -176,14 +161,6 @@ p {
 @media (max-width: 800px) {
   header {
     text-align: center;
-    width: 100%;
-  }
-
-  section {
-    width: 100%;
-  }
-
-  aside {
     width: 100%;
   }
 
