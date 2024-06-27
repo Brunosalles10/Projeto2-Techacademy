@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
   <meta name="description" content="SITE THE ARKAD">
-  <base href="http://localhost/projeto2/Site/">
+
   <link rel="stylesheet" href="css/all.min.css">
   <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -23,7 +23,7 @@
 
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.php">
+      <a class="navbar-brand" href="Home">
         <img src="imagens/logo.png" alt="logo site">
 
       </a>
@@ -33,23 +33,26 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="index.php">INICIO</a>
+            <a class="nav-link " aria-current="page" href="home" title="Home">INICIO</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="quemsomos.html">QUEM SOMOS</a>
+            <a class="nav-link" href="quemsomos" title="Quem Somos">QUEM SOMOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link "  href="arkad" title="The Arkad">ARKAD</a>
           </li>
 
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              JOGOS
+              OUTROS JOGOS
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="jogo.html">THE ARKAD</a></li>
-              <li><a class="dropdown-item" href="erro.php">JOGO 2</a></li>
+              <li><a class="dropdown-item" href="erro" title="">JOGO 1</a></li>
+              <li><a class="dropdown-item" href="erro">JOGO 2</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="erro.php">jogo 3</a></li>
+              <li><a class="dropdown-item" href="erro">jogo 3</a></li>
             </ul>
           </li>
 
@@ -57,7 +60,7 @@
         <div class="d-flex">
 
 
-          <a href="contato.html" title="contato" class="btn btn-info">
+          <a href="contato" title="Contato" class="btn btn-info">
             <i class="fas fa-envelope"></i>
             Entre em Contato
 
@@ -73,26 +76,31 @@
   <!-- Início área do menu principal -->
   <main class="principal">
     <?php
-    $pagina = "home";
-    //varifica se foi clicado no menu
-    if (isset($_GET["pagina"])) {
-      $pagina = $_GET["pagina"] ?? "home";
-      //games/1
-      $pagina = explode("/", $pagina);
-
-      $codigo = $pagina[1] ?? NULL;
-      $pagina = $pagina[0] ?? "home";
-
-      $pagina = "pages/{$pagina}.php";
-
-      if (file_exists($pagina)) {
-        include $pagina;
-      } else {
-        include "pages/erro.php";
-      }
+    if (isset($_GET["param"])) {
+      $param = $_GET["param"];
+      $p = explode("/", $param);
     }
 
+    $page = $p[0] ?? "home";
+    $jogo = $p[1] ?? NULL;
+
+    if ($page == "jogo") {
+       $pagina = "jogo/{$jogo}.php";
+    }else {
+        $pagina = "paginas/{$page}.php";
+      }
+
+    if (file_exists($pagina)) {
+      include $pagina;
+    } else {
+      include "paginas/erro.php";
+    }
+
+
+
+
     ?>
+    <!--
     <div class="principal-b container ">
       <img class="img-fluid " src="imagens/principal.png" alt="jogo the arkad">
     </div>
@@ -134,7 +142,8 @@
         </div>
       </div>
 
-    </div>
+    </div> 
+       -->
 
 
 

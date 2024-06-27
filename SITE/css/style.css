@@ -65,8 +65,17 @@ body {
   box-sizing: border-box;
 }
 
+.visitar {
+  margin-top: 75px;
+}
+
 /* FIM AREA PRINCIPAL*/
 /*INICIO DAS COLUNAS GRID DA PAGINA O JOGO*/
+.btn-jogo {
+  margin-top: 25px;
+  margin: 10px;
+}
+
 iframe {
   display: block;
   margin: auto;
@@ -92,12 +101,9 @@ iframe {
 /*INICIO DO RODAPE*/
 .footer {
   background: black;
-  clear: both;
   text-align: center;
   padding: 8px;
   color: white;
-  position: fixed;
-  bottom: 0;
   width: 100%;
   box-sizing: border-box;
 }
